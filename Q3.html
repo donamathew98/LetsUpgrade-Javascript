@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Program to search element in a array of strings</title>
+  </head>
+  <body>
+    <script>
+      let str="fish";
+      let arr=["cat","dog","fish","parrot"];
+      let n=0;
+      for(let i=0; i<arr.length; i++)
+      {
+          if(str.length==arr[i].length)
+         {
+            let temp= arr[i];
+            let c=0;
+            
+            for(let j=0; j<str.length; j++)
+            {
+                if(str[j]==temp[j])
+                {
+                  c=c+1;
+                }
+            }
+            if(c==str.length){
+              console.log(`the string is at position ${i+1}`);
+              n=n+1;
+            }
+         }
+      } 
+      if(n==0)
+      {
+        console.log("string not found");
+      }
+    </script>
+  </body>
+</html>
