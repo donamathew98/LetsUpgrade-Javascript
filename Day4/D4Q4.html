@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>A. Write a function to display all the objects having age less than 30<br>B. Write a function to display all the objects having country India</title>
+<script>
+let people=[
+{
+"name":"riya",
+"age":18,
+"country":"India",
+"hobbies":"Learning new things"
+},
+{
+"name":"mani",
+"age":33,
+"country":"India",
+"hobbies":"Listening to music"
+}
+];
+function age()
+{
+for(var i=0;i<2;i++)
+{
+if(people[i].age<30)
+{
+console.log(people[i]);
+}
+}
+}
+function country()
+{
+for(var i=0;i<2;i++)
+{
+if(people[i].country=="India")
+{
+console.log(people[i]);
+}
+}
+}
+</script>
+</head>
+<body>
+<button onclick="age()">age<30</button>
+<button onclick="country()">country</button>
+</body>
+</html>

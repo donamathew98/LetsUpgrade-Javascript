@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a webpage containing an image and three buttons</title>
+
+</head>
+<body>
+    <h1>Create a webpage containing an image and three buttons</h1>
+    <img id="button" src="https://cdn.mos.cms.futurecdn.net/qWRNTdErRRidiwWoT5dvj-650-80.jpg.webp" width="400px" height="400px"/>
+    <br>
+    <button onclick="button1()">Button-1</button>
+    <button onclick="button2()">Button-2</button>
+    <button onclick="button3()">Button-3</button>
+    <script>
+        function button1()
+        {
+            const b1 = document.getElementById("button");
+            b1.src = "https://cdn.mos.cms.futurecdn.net/qWRNTdErRRidiwWoT5dvj-650-80.jpg.webp";
+        }
+
+        function button2()
+        {
+            const b2 = document.getElementById("button");
+            b2.src = "https://cdn.mos.cms.futurecdn.net/uWnkn593ZPC2CG9LAWusYj-650-80.jpg.webp";
+        }
+
+        function button3()
+        {   
+            const b3 = document.getElementById("button");
+            b3.src = "https://cdn.mos.cms.futurecdn.net/kMChxjg6MPHUGGcCparx7b-650-80.jpg";
+        }
+
+    </script>
+</body>
+</html>

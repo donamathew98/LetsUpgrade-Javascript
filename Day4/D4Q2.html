@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Create a webpage containing two input fields and a button.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <input type="text" class="input" placeholder="Enter input" />
+    <input type="text" class="input" placeholder="copied input" />
+    <button onclick="change()">Click me</button>
+
+    <script>
+        function change()
+        {
+            const ele = document.getElementsByClassName("input");
+            ele[1].value = ele[0].value;
+        } 
+    </script>
+</body>
+</html>
